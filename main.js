@@ -4,3 +4,4 @@ let save = new Save();
 save.saveInLocal(note.id, note);
 console.log(save.getFromLocal(note.id));
 
+// Note display() method will display data got from Save object

@@ -8,4 +8,7 @@ class Note {
         this.color = color;
     }
      
+    display() {
+        
+    }
 }
