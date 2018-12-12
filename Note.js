@@ -6,9 +6,6 @@ class Note {
         this.content = content;
         this.order = order;
         this.color = color;
-    }
-     
-    display() {
-        
-    }
+    }   
+
 }
