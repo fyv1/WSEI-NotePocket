@@ -28,7 +28,6 @@ class Storage {
 
         
         document.querySelector("#content").appendChild(noteDiv);  // = "<div class=\"note\" style=\"background-color: "+this.getFromLocal(id).color+"\">"+ this.getFromLocal(id).content +"</div>";
-        
-        
+
     }
 }

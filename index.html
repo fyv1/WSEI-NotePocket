@@ -9,11 +9,18 @@
 </head>
 <body>
     <!-- TODO layout: form; div with all notes -->
-    <div id="form"></div>    
+    <div id="form">
+        <form name="add">
+            <input type="text" name="title" id="title" placeholder="Tytuł"><br>
+            <textarea name="contentInput" id="contentInput"></textarea>
+            <input type="submit" value="add note">
+        </form>
+    </div>   
 
     <div id="content">
         
     </div>
+
 
 <script src="Note.js"></script> 
 <script src="Storage.js"></script>
