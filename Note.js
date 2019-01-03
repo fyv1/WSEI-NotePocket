@@ -1,7 +1,7 @@
 class Note {
 
-    constructor(id,title,content,order,color){  
-        this.id = id;
+    constructor(title,content,order,color){  
+        this.id = Date.now();
         this.title = title;
         this.content = content;
         this.order = order;
