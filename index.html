@@ -8,14 +8,47 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- TODO layout: form; div with all notes -->
-    <div id="form">
-        <form name="add">
-            <input type="text" name="title" id="title" placeholder="Tytuł"><br>
-            <textarea name="contentInput" id="contentInput"></textarea>
-            <input type="submit" value="add note">
+    <form >
+        <fieldset>
+        
+        <!-- Form Name -->
+        <legend>WSEI-NotePocket</legend>
+        
+        <!-- Text input-->
+        <div>
+          <label for="title">Tytuł</label>  
+         <div>
+          <input id="title" name="title" type="text">
+            </div>
+          </div>
+        </div>
+        
+        <!-- Textarea -->
+        <div >
+          <label for="contentInput">Treść notatki</label>
+          <div >                     
+            <textarea id="contentInput" name="contentInput"></textarea>
+          </div>
+        </div>
+
+        <div>
+            <label for="color">Kolor</label>
+            <div>
+                <input type="color" name="color" id="color">
+            </div>
+        </div>
+        
+        <!-- Button -->
+        <div >
+          <label for="singlebutton"></label>
+          <div><br> 
+            <input type="submit" value="Dodaj notatkę" onclick="addNote()" name="singlebutton" id="singlebutton">   
+          </div>
+        </div>
+        
+        </fieldset>
         </form>
-    </div>   
+          
 
     <div id="content">
         

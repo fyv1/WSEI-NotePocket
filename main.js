@@ -1,19 +1,23 @@
-let note = new Note("1", "random", "hello", "1", "red");
-let note2 = new Note("2", "kappa", "lipsum", "2", "green");
 let storage = new Storage();
+let length = storage.length;
 
-let title = document.querySelector("title").value;
-console.log(title);
-//save to array (push), then display each array element as single note, but array set in local storage
+/**
+ * Takes values from form and puts as Note object in local storage
+ *
+ */
+function addNote(){
 
-storage.saveInLocal(note.id, note);
-storage.saveInLocal(note2.id, note2);
+    let title = document.querySelector('#title').value;
+    let content = document.querySelector('#contentInput').value;
+    let color = document.querySelector('#color').value;
 
-storage.removeFromLocal("undefined");
- 
+    let note = new Note(title, content, length+1, color);
+    
+    storage.saveInLocal(note.id, note);
+} 
+
+
 for(let key in localStorage) { 
     storage.display(key); 
 }
 
-
-// Note display() method will display data got from Storage object
